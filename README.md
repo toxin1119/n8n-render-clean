@@ -13,3 +13,11 @@
    - Start Command：`n8n`
    - 貼 `.env.template` 內容進 Render 的「Add from .env」
 4. Deploy 成功後開啟：
+https://YOUR_RENDER_DOMAIN.onrender.com
+
+markdown
+複製
+編輯
+5. 測試 Google OAuth：
+- 建 Google Sheets / Gmail Credential
+- 點「Connect」並完成授權
