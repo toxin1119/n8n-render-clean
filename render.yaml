@@ -2,23 +2,14 @@ services:
   - type: web
     name: n8n
     env: node
-    repo: https://github.com/your-username/n8n-render-clean
+    repo: https://github.com/YOUR_USERNAME/n8n-render-clean
     branch: main
     buildCommand: npm install
     startCommand: n8n
     envVars:
-      - key: N8N_HOST
-        value: my-n8n-service-xxxxx.onrender.com
-      - key: N8N_PROTOCOL
-        value: https
-      - key: WEBHOOK_TUNNEL_URL
-        value: https://my-n8n-service-xxxxx.onrender.com
       - key: EXECUTIONS_MODE
         value: regular
       - key: GENERIC_TIMEZONE
         value: Asia/Taipei
-      - key: N8N_ENCRYPTION_KEY
-        value: some-long-secret-key
       - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
         value: true
-    plan: free
